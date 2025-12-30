@@ -1,0 +1,15 @@
+#!/bin/sh
+
+mount -t proc none /proc
+mount -t sysfs none /sys
+mount -t devtmpfs none /dev
+
+echo
+echo "====================================="
+echo "   Welcome to ShomskiLinux v0.1"
+echo "   Kernel: $(uname -r)"
+echo "====================================="
+echo
+
+exec /bin/sh
+
