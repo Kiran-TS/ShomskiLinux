@@ -11,5 +11,10 @@ echo "   Kernel: $(uname -r)"
 echo "====================================="
 echo
 
-exec /bin/sh
+exec setsid /sbin/cttyhack /bin/sh
+
+
+
+
+
 
